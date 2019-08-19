@@ -12,6 +12,7 @@
 		062266FF230A5AA30011BB7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062266FD230A5AA30011BB7E /* Main.storyboard */; };
 		06226701230A5AAE0011BB7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06226700230A5AAE0011BB7E /* Assets.xcassets */; };
 		06226704230A5AAE0011BB7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06226702230A5AAE0011BB7E /* LaunchScreen.storyboard */; };
+		F6D9282D97B13E1AD4EDF859 /* Pods_CalorieCounter_Nutritionix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA3CAC79D3112C31064ED53 /* Pods_CalorieCounter_Nutritionix.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		06226700230A5AAE0011BB7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06226703230A5AAE0011BB7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06226705230A5AAE0011BB7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E45D9D5AE7165552B2E1D57 /* Pods-CalorieCounter_Nutritionix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounter_Nutritionix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounter_Nutritionix/Pods-CalorieCounter_Nutritionix.debug.xcconfig"; sourceTree = "<group>"; };
+		75E6AD2EFC5DE685AD9504D8 /* Pods-CalorieCounter_Nutritionix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounter_Nutritionix.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounter_Nutritionix/Pods-CalorieCounter_Nutritionix.release.xcconfig"; sourceTree = "<group>"; };
+		8AA3CAC79D3112C31064ED53 /* Pods_CalorieCounter_Nutritionix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorieCounter_Nutritionix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D9282D97B13E1AD4EDF859 /* Pods_CalorieCounter_Nutritionix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				062266F8230A5AA30011BB7E /* CalorieCounter_Nutritionix */,
 				062266F7230A5AA30011BB7E /* Products */,
+				C20E83B637261B00684F3526 /* Pods */,
+				8489288723C503F75C89EECE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = CalorieCounter_Nutritionix;
 			sourceTree = "<group>";
 		};
+		8489288723C503F75C89EECE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AA3CAC79D3112C31064ED53 /* Pods_CalorieCounter_Nutritionix.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C20E83B637261B00684F3526 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E45D9D5AE7165552B2E1D57 /* Pods-CalorieCounter_Nutritionix.debug.xcconfig */,
+				75E6AD2EFC5DE685AD9504D8 /* Pods-CalorieCounter_Nutritionix.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06226708230A5AAE0011BB7E /* Build configuration list for PBXNativeTarget "CalorieCounter_Nutritionix" */;
 			buildPhases = (
+				D9E97457904FC1F16083B239 /* [CP] Check Pods Manifest.lock */,
 				062266F2230A5AA30011BB7E /* Sources */,
 				062266F3230A5AA30011BB7E /* Frameworks */,
 				062266F4230A5AA30011BB7E /* Resources */,
+				77D575741D94D3D464196C7D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77D575741D94D3D464196C7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CalorieCounter_Nutritionix/Pods-CalorieCounter_Nutritionix-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalorieCounter_Nutritionix/Pods-CalorieCounter_Nutritionix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9E97457904FC1F16083B239 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalorieCounter_Nutritionix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		062266F2230A5AA30011BB7E /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		06226709230A5AAE0011BB7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E45D9D5AE7165552B2E1D57 /* Pods-CalorieCounter_Nutritionix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		0622670A230A5AAE0011BB7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75E6AD2EFC5DE685AD9504D8 /* Pods-CalorieCounter_Nutritionix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

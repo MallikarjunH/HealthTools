@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zB7-zm-D6X">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Blogs-->
+        <scene sceneID="E2b-ev-hdE">
+            <objects>
+                <viewController id="C3h-Q9-wBK" customClass="ViewController" customModule="Health_Blogs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ejq-WJ-F4e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4J-LG-gxV">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1K-e8-kx5">
+                                <rect key="frame" x="0.0" y="64" width="54" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="YwR-5o-sJo"/>
+                                    <constraint firstAttribute="height" constant="48" id="yqn-Iy-96Z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m4J-LG-gxV" firstAttribute="bottom" secondItem="Wpg-L4-Dd5" secondAttribute="bottom" id="FQ4-yA-dg7"/>
+                            <constraint firstItem="Wpg-L4-Dd5" firstAttribute="trailing" secondItem="m4J-LG-gxV" secondAttribute="trailing" id="axV-oe-6kf"/>
+                            <constraint firstItem="q1K-e8-kx5" firstAttribute="top" secondItem="Wpg-L4-Dd5" secondAttribute="top" id="buK-Qr-Gw1"/>
+                            <constraint firstItem="m4J-LG-gxV" firstAttribute="leading" secondItem="Wpg-L4-Dd5" secondAttribute="leading" id="cx6-YR-sva"/>
+                            <constraint firstItem="m4J-LG-gxV" firstAttribute="top" secondItem="Wpg-L4-Dd5" secondAttribute="top" id="hnL-lo-CAV"/>
+                            <constraint firstItem="q1K-e8-kx5" firstAttribute="leading" secondItem="Wpg-L4-Dd5" secondAttribute="leading" id="pkD-k5-33c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wpg-L4-Dd5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blogs" id="CeQ-m3-77V"/>
+                    <connections>
+                        <outlet property="webView" destination="m4J-LG-gxV" id="Car-FC-hoU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uf2-Tn-Zr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2891.304347826087" y="138.58695652173915"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yeg-fp-Ntq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zB7-zm-D6X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oY9-U2-BNC">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="C3h-Q9-wBK" kind="relationship" relationship="rootViewController" id="v5m-xR-X1b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yT4-zm-tHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984.057971014493" y="138.58695652173915"/>
+        </scene>
+    </scenes>
+</document>
