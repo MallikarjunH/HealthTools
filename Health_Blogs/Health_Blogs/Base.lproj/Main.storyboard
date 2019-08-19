@@ -28,9 +28,22 @@
                             </wkWebView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1K-e8-kx5">
                                 <rect key="frame" x="0.0" y="64" width="54" height="48"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yL-so-Ryp">
+                                        <rect key="frame" x="8" y="8" width="36" height="32"/>
+                                        <state key="normal" image="backWhite"/>
+                                        <connections>
+                                            <action selector="backButtonClicked:" destination="C3h-Q9-wBK" eventType="touchUpInside" id="cDp-46-0eN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0039215686274509803" green="0.5490196078431373" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="54" id="YwR-5o-sJo"/>
+                                    <constraint firstItem="4yL-so-Ryp" firstAttribute="leading" secondItem="q1K-e8-kx5" secondAttribute="leading" constant="8" id="beG-QD-NFo"/>
+                                    <constraint firstAttribute="trailing" secondItem="4yL-so-Ryp" secondAttribute="trailing" constant="10" id="cZm-kf-oQv"/>
+                                    <constraint firstItem="4yL-so-Ryp" firstAttribute="top" secondItem="q1K-e8-kx5" secondAttribute="top" constant="8" id="mof-o7-898"/>
+                                    <constraint firstAttribute="bottom" secondItem="4yL-so-Ryp" secondAttribute="bottom" constant="8" id="uV1-JT-etW"/>
                                     <constraint firstAttribute="height" constant="48" id="yqn-Iy-96Z"/>
                                 </constraints>
                             </view>
@@ -48,12 +61,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Blogs" id="CeQ-m3-77V"/>
                     <connections>
+                        <outlet property="backButtonView" destination="q1K-e8-kx5" id="2uc-g4-cB4"/>
                         <outlet property="webView" destination="m4J-LG-gxV" id="Car-FC-hoU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uf2-Tn-Zr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2891.304347826087" y="138.58695652173915"/>
+            <point key="canvasLocation" x="2889.8550724637685" y="138.58695652173915"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yeg-fp-Ntq">
@@ -74,4 +88,7 @@
             <point key="canvasLocation" x="1984.057971014493" y="138.58695652173915"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backWhite" width="21" height="21"/>
+    </resources>
 </document>

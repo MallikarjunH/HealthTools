@@ -15,10 +15,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
     
+    
+    @IBOutlet weak var backButtonView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+      backButtonView.isHidden = true
       loadBlogs()
     }
 
@@ -29,5 +32,13 @@ class ViewController: UIViewController {
         webView.load(myRequest)
         
     }
+    
+    @IBAction func backButtonClicked(_ sender: Any) {
+        
+        let url = URL (string: "https://vidalhealth.com/blog/")
+        let requestObj = URLRequest(url: url!)
+        webView.load(requestObj)
+    }
+    
 }
 
