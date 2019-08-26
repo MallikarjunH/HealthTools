@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "269D6AB53050CC6FF2C0F96399242B1F"
+               BlueprintIdentifier = "1CFA7A010AF1319D1F0EA8E88C43944A"
                BlueprintName = "Pods-CalorieCounter_Nutritionix"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-CalorieCounter_Nutritionix.framework">
