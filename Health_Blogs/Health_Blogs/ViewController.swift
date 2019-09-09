@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-      backButtonView.isHidden = true
+     // backButtonView.isHidden = false
       loadBlogs()
     }
 

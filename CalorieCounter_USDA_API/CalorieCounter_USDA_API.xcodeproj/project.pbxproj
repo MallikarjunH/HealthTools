@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		060BA2A6230FF18F00BF8E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060BA2A5230FF18F00BF8E9E /* AppDelegate.swift */; };
-		060BA2A8230FF18F00BF8E9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060BA2A7230FF18F00BF8E9E /* ViewController.swift */; };
 		060BA2AB230FF18F00BF8E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060BA2A9230FF18F00BF8E9E /* Main.storyboard */; };
 		060BA2AD230FF19700BF8E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 060BA2AC230FF19700BF8E9E /* Assets.xcassets */; };
 		060BA2B0230FF19700BF8E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060BA2AE230FF19700BF8E9E /* LaunchScreen.storyboard */; };
+		063671662313997800D14CB2 /* SearchFoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063671652313997800D14CB2 /* SearchFoodVC.swift */; };
+		063671682313999900D14CB2 /* FoodNutrientsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063671672313999900D14CB2 /* FoodNutrientsDetailsVC.swift */; };
+		0636716C23139D9D00D14CB2 /* FoodSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0636716B23139D9D00D14CB2 /* FoodSearchTableViewCell.swift */; };
 		B972523D0F1F6DA5D15E2166 /* Pods_CalorieCounter_USDA_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A4024461067912CAF8C87C /* Pods_CalorieCounter_USDA_API.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +21,13 @@
 		00A4024461067912CAF8C87C /* Pods_CalorieCounter_USDA_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorieCounter_USDA_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		060BA2A2230FF18F00BF8E9E /* CalorieCounter_USDA_API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieCounter_USDA_API.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		060BA2A5230FF18F00BF8E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		060BA2A7230FF18F00BF8E9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		060BA2AA230FF18F00BF8E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		060BA2AC230FF19700BF8E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		060BA2AF230FF19700BF8E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		060BA2B1230FF19700BF8E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		063671652313997800D14CB2 /* SearchFoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFoodVC.swift; sourceTree = "<group>"; };
+		063671672313999900D14CB2 /* FoodNutrientsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodNutrientsDetailsVC.swift; sourceTree = "<group>"; };
+		0636716B23139D9D00D14CB2 /* FoodSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearchTableViewCell.swift; sourceTree = "<group>"; };
 		115FB6070FD7F420A67E3EE2 /* Pods-CalorieCounter_USDA_API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounter_USDA_API.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounter_USDA_API/Pods-CalorieCounter_USDA_API.release.xcconfig"; sourceTree = "<group>"; };
 		C946A063EB1F5698017C9026 /* Pods-CalorieCounter_USDA_API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounter_USDA_API.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieCounter_USDA_API/Pods-CalorieCounter_USDA_API.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,13 +66,31 @@
 			isa = PBXGroup;
 			children = (
 				060BA2A5230FF18F00BF8E9E /* AppDelegate.swift */,
-				060BA2A7230FF18F00BF8E9E /* ViewController.swift */,
+				0636716923139D3F00D14CB2 /* ViewController */,
+				0636716A23139D4B00D14CB2 /* TableViewCell */,
 				060BA2A9230FF18F00BF8E9E /* Main.storyboard */,
 				060BA2AC230FF19700BF8E9E /* Assets.xcassets */,
 				060BA2AE230FF19700BF8E9E /* LaunchScreen.storyboard */,
 				060BA2B1230FF19700BF8E9E /* Info.plist */,
 			);
 			path = CalorieCounter_USDA_API;
+			sourceTree = "<group>";
+		};
+		0636716923139D3F00D14CB2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				063671652313997800D14CB2 /* SearchFoodVC.swift */,
+				063671672313999900D14CB2 /* FoodNutrientsDetailsVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0636716A23139D4B00D14CB2 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0636716B23139D9D00D14CB2 /* FoodSearchTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		C41ADCFE05E16D42BF5D7438 /* Pods */ = {
@@ -208,8 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				060BA2A8230FF18F00BF8E9E /* ViewController.swift in Sources */,
 				060BA2A6230FF18F00BF8E9E /* AppDelegate.swift in Sources */,
+				0636716C23139D9D00D14CB2 /* FoodSearchTableViewCell.swift in Sources */,
+				063671682313999900D14CB2 /* FoodNutrientsDetailsVC.swift in Sources */,
+				063671662313997800D14CB2 /* SearchFoodVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

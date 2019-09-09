@@ -26,42 +26,34 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1K-e8-kx5">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q1K-e8-kx5">
                                 <rect key="frame" x="0.0" y="64" width="54" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yL-so-Ryp">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yL-so-Ryp">
                                         <rect key="frame" x="8" y="8" width="36" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="backWhite"/>
                                         <connections>
-                                            <action selector="backButtonClicked:" destination="C3h-Q9-wBK" eventType="touchUpInside" id="cDp-46-0eN"/>
+                                            <action selector="backButtonClicked:" destination="C3h-Q9-wBK" eventType="touchUpInside" id="g0l-9o-qju"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0039215686274509803" green="0.5490196078431373" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="54" id="YwR-5o-sJo"/>
-                                    <constraint firstItem="4yL-so-Ryp" firstAttribute="leading" secondItem="q1K-e8-kx5" secondAttribute="leading" constant="8" id="beG-QD-NFo"/>
-                                    <constraint firstAttribute="trailing" secondItem="4yL-so-Ryp" secondAttribute="trailing" constant="10" id="cZm-kf-oQv"/>
-                                    <constraint firstItem="4yL-so-Ryp" firstAttribute="top" secondItem="q1K-e8-kx5" secondAttribute="top" constant="8" id="mof-o7-898"/>
-                                    <constraint firstAttribute="bottom" secondItem="4yL-so-Ryp" secondAttribute="bottom" constant="8" id="uV1-JT-etW"/>
-                                    <constraint firstAttribute="height" constant="48" id="yqn-Iy-96Z"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="m4J-LG-gxV" firstAttribute="bottom" secondItem="Wpg-L4-Dd5" secondAttribute="bottom" id="FQ4-yA-dg7"/>
                             <constraint firstItem="Wpg-L4-Dd5" firstAttribute="trailing" secondItem="m4J-LG-gxV" secondAttribute="trailing" id="axV-oe-6kf"/>
-                            <constraint firstItem="q1K-e8-kx5" firstAttribute="top" secondItem="Wpg-L4-Dd5" secondAttribute="top" id="buK-Qr-Gw1"/>
                             <constraint firstItem="m4J-LG-gxV" firstAttribute="leading" secondItem="Wpg-L4-Dd5" secondAttribute="leading" id="cx6-YR-sva"/>
                             <constraint firstItem="m4J-LG-gxV" firstAttribute="top" secondItem="Wpg-L4-Dd5" secondAttribute="top" id="hnL-lo-CAV"/>
-                            <constraint firstItem="q1K-e8-kx5" firstAttribute="leading" secondItem="Wpg-L4-Dd5" secondAttribute="leading" id="pkD-k5-33c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wpg-L4-Dd5"/>
                     </view>
                     <navigationItem key="navigationItem" title="Blogs" id="CeQ-m3-77V"/>
                     <connections>
-                        <outlet property="backButtonView" destination="q1K-e8-kx5" id="2uc-g4-cB4"/>
+                        <outlet property="backButtonView" destination="4yL-so-Ryp" id="luz-C3-svf"/>
                         <outlet property="webView" destination="m4J-LG-gxV" id="Car-FC-hoU"/>
                     </connections>
                 </viewController>
